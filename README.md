@@ -116,6 +116,14 @@ Click on 'ENABLE'
   </p>
 </div>
 
+---
+
+2. Get your creditentials
+
+Click on 'CREATE CREDITENTIALS' button
+
+
+
 
 
 
