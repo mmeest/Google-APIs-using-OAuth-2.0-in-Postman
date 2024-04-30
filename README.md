@@ -196,7 +196,7 @@ Copy client ID and download your creditentials
 
 <div>
   <p align="center">
-    <img src="https://github.com/mmeest/Google-APIs-using-OAuth-2.0-in-Postman/blob/main/img/B%20(9).png" width="700px">
+    <img src="https://github.com/mmeest/Google-APIs-using-OAuth-2.0-in-Postman/blob/main/img/B%20(19).png" width="700px">
   </p>
 </div>
 
