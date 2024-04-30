@@ -122,13 +122,97 @@ Click on 'ENABLE'
 
 Click on 'CREATE CREDITENTIALS' button
 
+<div>
+  <p align="center">
+    <img src="https://github.com/mmeest/Google-APIs-using-OAuth-2.0-in-Postman/blob/main/img/B%20(1).png" width="700px">
+  </p>
+</div>
 
+Google Sheets API should be autoselected. 
+Select 'User data' for accessing. And click Next
 
+<div>
+  <p align="center">
+    <img src="https://github.com/mmeest/Google-APIs-using-OAuth-2.0-in-Postman/blob/main/img/B%20(2).png" width="700px">
+  </p>
+</div>
 
+Give your app a name and contact e-mail address.
 
+NB! When naming your app don't use 'Google' in it or you will get an error:
+```
+An error saving your app has occurred
+The request has been classified as abusive and was not allowed to proceed
+```
 
+<div>
+  <p align="center">
+    <img src="https://github.com/mmeest/Google-APIs-using-OAuth-2.0-in-Postman/blob/main/img/B%20(3).png" width="700px">
+  </p>
+</div>
 
+Click 'ADD OR REMOVE SCOPES'
 
+<div>
+  <p align="center">
+    <img src="https://github.com/mmeest/Google-APIs-using-OAuth-2.0-in-Postman/blob/main/img/B%20(4).png" width="700px">
+  </p>
+</div>
+
+Select 'Google Sheets API' .../auth/spreadsheets.readonly and click 'Update'
+
+<div>
+  <p align="center">
+    <img src="https://github.com/mmeest/Google-APIs-using-OAuth-2.0-in-Postman/blob/main/img/B%20(5).png" width="700px">
+  </p>
+</div>
+
+Under 'Oauth Client ID' select application type 'Web Application' and give a client name:
+
+<div>
+  <p align="center">
+    <img src="https://github.com/mmeest/Google-APIs-using-OAuth-2.0-in-Postman/blob/main/img/B%20(6).png" width="700px">
+  </p>
+</div>
+
+<div>
+  <p align="center">
+    <img src="https://github.com/mmeest/Google-APIs-using-OAuth-2.0-in-Postman/blob/main/img/B%20(7).png" width="700px">
+  </p>
+</div>
+
+Under authorized URI's add URI. 
+If using Postman web client add: https://oauth.pstmn.io/v1/browser-callback
+If using Postman desktop client add. https://oauth.pstmn.io/v1/callback
+If you are using both clients add both URIs.
+
+<div>
+  <p align="center">
+    <img src="https://github.com/mmeest/Google-APIs-using-OAuth-2.0-in-Postman/blob/main/img/B%20(8).png" width="700px">
+  </p>
+</div>
+
+Copy client ID and download your creditentials
+
+<div>
+  <p align="center">
+    <img src="https://github.com/mmeest/Google-APIs-using-OAuth-2.0-in-Postman/blob/main/img/B%20(9).png" width="700px">
+  </p>
+</div>
+
+Navigate to your newly created creditentials
+
+<div>
+  <p align="center">
+    <img src="https://github.com/mmeest/Google-APIs-using-OAuth-2.0-in-Postman/blob/main/img/B%20(10).png" width="700px">
+  </p>
+</div>
+
+<div>
+  <p align="center">
+    <img src="https://github.com/mmeest/Google-APIs-using-OAuth-2.0-in-Postman/blob/main/img/B%20(11).png" width="700px">
+  </p>
+</div>
 
 
 
