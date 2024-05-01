@@ -8,6 +8,70 @@
 # Google-APIs-using-OAuth-2.0-in-Postman
 Google APIs using OAuth 2.0 in Postman
 
+
+# Contents
+* [Tasks](#tasks)
+* [Setting up environment](#setting-up-environment)
+* [Solution](solution)
+
+
+<hr>
+
+
+## Tasks
+
+**1. Prepare a google sheet for the project:**
+
+* Create google sheet, manually, under your normal google account
+* Fill in, manually, 3 columns: Name, email and Age (Cells A1 => C1)
+* Add minimum 5 rows of data in the excel sheet
+* Make a GET request in Postman to https://sheets.googleapis.com/v4/spreadsheets/{{sheet_id}}/values/A1:C100
+
+**2. Read the sheet's header row:**
+
+* In the tests tab, parse the jsonData to get the details of first row ONLY. This shall be in a hardcoded “array index [0]”.
+* Print the result to the console
+* Does the result show your Header row “A1:C1”?
+
+**3. Print data in a CSV format:**
+
+* Make a for loop on the array of rows to print out their values in the Console, the output shall look like this:
+
+```
+Name,email,Age
+John,xy@email.com,15
+Doe,ab@email.com,24
+Malcom,xa@email.com,35
+```
+
+* Remember, such format is “tailored” which means you have to convert the array into your own print message. This means you will need
+to work with a for loop.
+* For a successful for loop, you will need to determine the length of the array first (i.e. count the array items before running the loop)
+
+**Bonus Task:**
+
+* Update your print message to print only the first column.
+* To understand this better, you will need to study again the JSON response. Maybe you'll need to read about nested arrays as well.
+* The output shall look like this:
+
+```
+Name
+John
+Doe
+Malcom
+```
+
+Now that you are comfortable with Postman API and parsing its data, what other requests can you make? study the API and feel free to
+try out more functionalities.
+
+Remember, you have access now to Google Sheets API as a developer, which means you can POST, UPDATE and DELETE sheets and
+their contents.
+Best of luck!
+
+
+## Setting up environment
+
+
 https://blog.postman.com/how-to-access-google-apis-using-oauth-in-postman/
 
 OAuth Playground on Google Devleopers:
@@ -319,3 +383,7 @@ You can generate new tokens after expiration by following the same process we di
 5. Revoking access
 
    You can navigate to https://myaccount.google.com/permissions to see a list of all third-party applications that have access to your account. You can then choose to revoke authorization access to any of these applications by clicking Remove access. In our case, the application to look for is called “Postman x Google.”
+
+
+
+## Solution   
