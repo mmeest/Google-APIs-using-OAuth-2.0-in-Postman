@@ -12,7 +12,7 @@ Google APIs using OAuth 2.0 in Postman
 # Contents
 * [Tasks](#tasks)
 * [Setting up environment](#setting-up-environment)
-* [Solution](solution)
+* [Solution](#solution)
 
 
 <hr>
