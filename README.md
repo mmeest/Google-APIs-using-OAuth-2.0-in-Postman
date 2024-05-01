@@ -1,3 +1,6 @@
+
+
+
 # Google-APIs-using-OAuth-2.0-in-Postman
 Google APIs using OAuth 2.0 in Postman
 
@@ -298,4 +301,17 @@ Problem should be resolved.
   </p>
 </div>
 
+Now you should be able to get access token by validating your Google account. 
 
+After validating popup window should redirect you back to Postman. NB! Pop up windows should be allowed in browser to succeed!
+
+Back in Postman new modal window should pop up with new Access Token.
+
+
+4. Managing tokens
+
+You can generate new tokens after expiration by following the same process we discussed above, but you won’t have to go through every step again. If you have a token added, you can manage all your tokens. In the Authorization tab, click on the token list option and select Manage Tokens. Here, you can see a list of added tokens, alongside their validity. You can choose to delete any tokens that you no longer need.
+
+5. Revoking access
+
+   You can navigate to https://myaccount.google.com/permissions to see a list of all third-party applications that have access to your account. You can then choose to revoke authorization access to any of these applications by clicking Remove access. In our case, the application to look for is called “Postman x Google.”
