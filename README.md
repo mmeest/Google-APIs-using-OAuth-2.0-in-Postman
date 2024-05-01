@@ -52,7 +52,7 @@ Select dropdown in the top navigation menu.
 
 <div>
   <p align="center">
-    <img src="https://github.com/mmeest/Google-APIs-using-OAuth-2.0-in-Postman/blob/main/A%20(1).png" width="700px">
+    <img src="https://github.com/mmeest/Google-APIs-using-OAuth-2.0-in-Postman/blob/main/img/A%20(1).png" width="700px">
   </p>
 </div>
 
@@ -60,7 +60,7 @@ Click 'New Project' button.
 
 <div>
   <p align="center">
-    <img src="https://github.com/mmeest/Google-APIs-using-OAuth-2.0-in-Postman/blob/main/A%20(2).png" width="700px">
+    <img src="https://github.com/mmeest/Google-APIs-using-OAuth-2.0-in-Postman/blob/main/img/A%20(2).png" width="700px">
   </p>
 </div>
 
@@ -68,7 +68,7 @@ Give your project a name, and select a location and an organization.
 
 <div>
   <p align="center">
-    <img src="https://github.com/mmeest/Google-APIs-using-OAuth-2.0-in-Postman/blob/main/A%20(3).png" width="700px">
+    <img src="https://github.com/mmeest/Google-APIs-using-OAuth-2.0-in-Postman/blob/main/img/A%20(3).png" width="700px">
   </p>
 </div>
 
@@ -76,7 +76,7 @@ On notification modal click 'SELECT PROJECT'
 
 <div>
   <p align="center">
-    <img src="https://github.com/mmeest/Google-APIs-using-OAuth-2.0-in-Postman/blob/main/A%20(4).png" width="700px">
+    <img src="https://github.com/mmeest/Google-APIs-using-OAuth-2.0-in-Postman/blob/main/img/A%20(4).png" width="700px">
   </p>
 </div>
 
@@ -84,7 +84,7 @@ On top left corner select hamburger menu and 'VIEW ALL PRODUCTS'
 
 <div>
   <p align="center">
-    <img src="https://github.com/mmeest/Google-APIs-using-OAuth-2.0-in-Postman/blob/main/A%20(5).png" width="700px">
+    <img src="https://github.com/mmeest/Google-APIs-using-OAuth-2.0-in-Postman/blob/main/img/A%20(5).png" width="700px">
   </p>
 </div>
 
@@ -92,7 +92,7 @@ Next select 'Apis and services'
 
 <div>
   <p align="center">
-    <img src="https://github.com/mmeest/Google-APIs-using-OAuth-2.0-in-Postman/blob/main/A%20(6).png" width="700px">
+    <img src="https://github.com/mmeest/Google-APIs-using-OAuth-2.0-in-Postman/blob/main/img/A%20(6).png" width="700px">
   </p>
 </div>
 
@@ -100,7 +100,7 @@ Select 'Library'
 
 <div>
   <p align="center">
-    <img src="https://github.com/mmeest/Google-APIs-using-OAuth-2.0-in-Postman/blob/main/A%20(7).png" width="700px">
+    <img src="https://github.com/mmeest/Google-APIs-using-OAuth-2.0-in-Postman/blob/main/img/A%20(7).png" width="700px">
   </p>
 </div>
 
@@ -108,7 +108,7 @@ Select 'Google Sheets API'
 
 <div>
   <p align="center">
-    <img src="https://github.com/mmeest/Google-APIs-using-OAuth-2.0-in-Postman/blob/main/A%20(8).png" width="700px">
+    <img src="https://github.com/mmeest/Google-APIs-using-OAuth-2.0-in-Postman/blob/main/img/A%20(8).png" width="700px">
   </p>
 </div>
 
@@ -116,7 +116,7 @@ Click on 'ENABLE'
 
 <div>
   <p align="center">
-    <img src="https://github.com/mmeest/Google-APIs-using-OAuth-2.0-in-Postman/blob/main/A%20(9).png" width="700px">
+    <img src="https://github.com/mmeest/Google-APIs-using-OAuth-2.0-in-Postman/blob/main/img/A%20(9).png" width="700px">
   </p>
 </div>
 
