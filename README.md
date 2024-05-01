@@ -3,6 +3,10 @@ Google APIs using OAuth 2.0 in Postman
 
 https://blog.postman.com/how-to-access-google-apis-using-oauth-in-postman/
 
+OAuth Playground on Google Devleopers:
+
+https://developers.google.com/oauthplayground/
+
 OAuth 2.0 - Authorization Framework
 
 OAuth provides standardized and secure protocol for authorization between APIs and third-party
