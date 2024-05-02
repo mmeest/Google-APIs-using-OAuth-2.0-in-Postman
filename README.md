@@ -78,6 +78,18 @@ OAuth Playground on Google Devleopers:
 
 https://developers.google.com/oauthplayground/
 
+Authenticating with OAuth 2.0
+
+https://learning.postman.com/docs/sending-requests/authorization/oauth-20/
+
+Google Sheets API 
+
+https://developers.google.com/sheets/api/reference/rest
+
+Google Sheet operations
+
+https://developers.google.com/sheets/api/samples/sheet
+
 OAuth 2.0 - Authorization Framework
 
 OAuth provides standardized and secure protocol for authorization between APIs and third-party
