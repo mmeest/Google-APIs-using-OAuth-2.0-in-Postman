@@ -336,7 +336,30 @@ Scroll down to 'Configure New Token'
 
 Click on 'Get New Access Token' button.
 
+---
+
 NB! Check your creditentials if it fetching token times out. Your user id may have extra empty space at the end!!
+
+---
+
+When sending request from Postman you may get 400 error invalid_request. 
+
+<div>
+  <p align="center">
+    <img src="https://github.com/mmeest/Google-APIs-using-OAuth-2.0-in-Postman/blob/main/img/d%20(1).png" width="700px">
+  </p>
+</div>
+
+Reason may be that Postman did'nt fetch right URI from Google Cloud.
+To resolve it check 'Authorize using browser' box.
+
+<div>
+  <p align="center">
+    <img src="https://github.com/mmeest/Google-APIs-using-OAuth-2.0-in-Postman/blob/main/img/d%20(2).png" width="700px">
+  </p>
+</div>
+
+---
 
 You may also get a following error after validating with Google account:
 
@@ -399,3 +422,4 @@ You can generate new tokens after expiration by following the same process we di
 
 
 ## Solution   
+
