@@ -423,3 +423,53 @@ You can generate new tokens after expiration by following the same process we di
 
 ## Solution   
 
+1. Following sheet created at Google Docs:
+
+<div>
+  <p align="center">
+    <img src="https://github.com/mmeest/Google-APIs-using-OAuth-2.0-in-Postman/blob/main/img/d%20(3).png" width="700px">
+  </p>
+</div>
+
+2. Reading first row of the document:
+
+By sending GET request to: https://sheets.googleapis.com/v4/spreadsheets/{{SheetID}}/values/OAuthTest
+
+Test scripts and printot code:
+
+```
+const jsonData = pm.response.json();
+
+pm.test("Correct response code is returned", function () {
+    pm.expect(pm.response.code).to.equal(200);
+});
+
+pm.test("Check correct number of rows - 9", function () {
+    var responseJSON = pm.response.json();
+    pm.expect(responseJSON).to.be.an('object');
+    pm.expect(responseJSON.values).to.be.an('array').that.has.lengthOf(9);
+});
+
+// printing out first row
+console.log("First row: " + jsonData.values[0]);
+```
+
+3. Printing out ata in CSV format:
+
+```
+let numOfRows = Object.keys(jsonData.values).length;
+
+for(let i = 0; i < numOfRows; i++){
+        console.log("" + jsonData.values[i]);
+}
+```
+
+Bonus Task: Print only first column
+
+```
+let numOfRows = Object.keys(jsonData.values).length;
+
+for(let i = 0; i < numOfRows; i++){
+        console.log(jsonData.values[i][0]);
+}
+```
