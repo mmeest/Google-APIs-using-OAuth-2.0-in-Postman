@@ -69,6 +69,13 @@ their contents.
 Best of luck!
 
 
+<div>
+  <p align="center">
+    <img src="https://github.com/mmeest/Google-APIs-using-OAuth-2.0-in-Postman/blob/main/img/oauth2.png" width="220px">
+  </p>
+</div>
+
+
 ## Setting up environment
 
 
