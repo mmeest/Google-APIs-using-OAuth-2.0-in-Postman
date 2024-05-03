@@ -544,7 +544,7 @@ Name,email,Age
   Solution B
 
   Getting all rows and parsing first one.
-  Request URL:
+  Request UR (where 'OAuthTest' is the name of the current sheet)L:
 
 ```
 https://sheets.googleapis.com/v4/spreadsheets/{{SheetID}}/values/OAuthTest
@@ -595,6 +595,7 @@ Script:
 ```
 const jsonData = pm.response.json();
 
+// storing how many rows current document has into variable
 let numOfRows = Object.keys(jsonData.values).length;
 
 for(let i = 0; i < numOfRows; i++){
@@ -604,25 +605,50 @@ for(let i = 0; i < numOfRows; i++){
 
 Output to console:
 
-```
- 
-Name,email,Age
- 
-Victor,victor@gmail.it,31
- 
-Oscar,oscar.oscar@unknown.com,42
- 
-Brandon,brandon.2@gmail.com,11
- 
-Emil,emil.999@fb.com,41
- 
-George,georgegeorge@google.com,42
- 
-Daniel,daniel005@mail.com,52
- 
-Richard,richard@gmail.com,22
- 
+``` 
+Name,email,Age 
+Victor,victor@gmail.it,31 
+Oscar,oscar.oscar@unknown.com,42 
+Brandon,brandon.2@gmail.com,11 
+Emil,emil.999@fb.com,41 
+George,georgegeorge@google.com,42 
+Daniel,daniel005@mail.com,52 
+Richard,richard@gmail.com,22 
 William,william.doe@yahoo.com,27
 ```
 
+Bonus Task to print out first column
 
+Once again send following GET request
+
+```
+https://sheets.googleapis.com/v4/spreadsheets/{{SheetID}}/values/OAuthTest
+```
+
+Script:
+
+```
+const jsonData = pm.response.json();
+
+// storing how many rows current document has into variable
+let numOfRows = Object.keys(jsonData.values).length;
+
+// printing ony first column: [0]
+for(let i = 0; i < numOfRows; i++){
+        console.log(jsonData.values[i][0]);
+}
+```
+
+Output in console:
+
+``` 
+Name 
+Victor 
+Oscar 
+Brandon 
+Emil 
+George 
+Daniel 
+Richard 
+William
+```
