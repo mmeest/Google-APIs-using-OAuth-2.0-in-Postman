@@ -349,6 +349,21 @@ NB! Check your creditentials if it fetching token times out. Your user id may ha
 
 ---
 
+You may get following Error:
+
+```
+Error: Could not complete OAuth 2.0 token request
+```
+
+Solution:
+Check that you have right 'Access Token URL'
+
+```
+https://oauth2.googleapis.com/token
+```
+
+---
+
 When sending request from Postman you may get 400 error invalid_request. 
 
 <div>
@@ -438,11 +453,120 @@ You can generate new tokens after expiration by following the same process we di
   </p>
 </div>
 
+Sending GET request:
+
+```
+https://sheets.googleapis.com/v4/spreadsheets/{{SheetID}}/values/A1:C100
+```
+
+JSON response:
+
+```
+{
+    "range": "OAuthTest!A1:C100",
+    "majorDimension": "ROWS",
+    "values": [
+        [
+            "Name",
+            "email",
+            "Age"
+        ],
+        [
+            "Victor",
+            "victor@gmail.it",
+            "31"
+        ],
+        [
+            "Oscar",
+            "oscar.oscar@unknown.com",
+            "42"
+        ],
+        [
+            "Brandon",
+            "brandon.2@gmail.com",
+            "11"
+        ],
+        [
+            "Emil",
+            "emil.999@fb.com",
+            "41"
+        ],
+        [
+            "George",
+            "georgegeorge@google.com",
+            "42"
+        ],
+        [
+            "Daniel",
+            "daniel005@mail.com",
+            "52"
+        ],
+        [
+            "Richard",
+            "richard@gmail.com",
+            "22"
+        ],
+        [
+            "William",
+            "william.doe@yahoo.com",
+            "27"
+        ]
+    ]
+}
+```
+
 2. Reading first row of the document:
 
-By sending GET request to: https://sheets.googleapis.com/v4/spreadsheets/{{SheetID}}/values/OAuthTest
+   Solution A
 
-Test scripts and printot code:
+   Sending GET request to fetch first row:
+
+```
+https://sheets.googleapis.com/v4/spreadsheets/{{SheetID}}/values/A1:C1
+```
+
+And script for displaying it in console:
+
+```
+const jsonData = pm.response.json();
+
+console.log('' + jsonData.values);
+```
+
+Result:
+
+```
+Name,email,Age
+```
+
+---
+
+  Solution B
+
+  Getting all rows and parsing first one.
+  Request URL:
+
+```
+https://sheets.googleapis.com/v4/spreadsheets/{{SheetID}}/values/OAuthTest
+```
+
+Script:
+
+```
+const jsonData = pm.response.json();
+
+console.log('' + jsonData.values[0]);
+```
+
+Result:
+
+```
+Name,email,Age
+```
+
+---
+
+Tests for GET request:
 
 ```
 const jsonData = pm.response.json();
@@ -456,14 +580,21 @@ pm.test("Check correct number of rows - 9", function () {
     pm.expect(responseJSON).to.be.an('object');
     pm.expect(responseJSON.values).to.be.an('array').that.has.lengthOf(9);
 });
-
-// printing out first row
-console.log("First row: " + jsonData.values[0]);
 ```
 
 3. Printing out ata in CSV format:
 
+Sending GET request to:
+
 ```
+https://sheets.googleapis.com/v4/spreadsheets/{{SheetID}}/values/OAuthTest
+```
+
+Script:
+
+```
+const jsonData = pm.response.json();
+
 let numOfRows = Object.keys(jsonData.values).length;
 
 for(let i = 0; i < numOfRows; i++){
@@ -471,12 +602,27 @@ for(let i = 0; i < numOfRows; i++){
 }
 ```
 
-Bonus Task: Print only first column
+Output to console:
 
 ```
-let numOfRows = Object.keys(jsonData.values).length;
-
-for(let i = 0; i < numOfRows; i++){
-        console.log(jsonData.values[i][0]);
-}
+ 
+Name,email,Age
+ 
+Victor,victor@gmail.it,31
+ 
+Oscar,oscar.oscar@unknown.com,42
+ 
+Brandon,brandon.2@gmail.com,11
+ 
+Emil,emil.999@fb.com,41
+ 
+George,georgegeorge@google.com,42
+ 
+Daniel,daniel005@mail.com,52
+ 
+Richard,richard@gmail.com,22
+ 
+William,william.doe@yahoo.com,27
 ```
+
+
