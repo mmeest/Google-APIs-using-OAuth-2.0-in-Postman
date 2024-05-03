@@ -582,7 +582,7 @@ pm.test("Check correct number of rows - 9", function () {
 });
 ```
 
-3. Printing out ata in CSV format:
+3. Printing out data in CSV format:
 
 Sending GET request to:
 
